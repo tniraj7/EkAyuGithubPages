@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the EkAyu iOS app.">
+  <meta name="color-scheme" content="light dark">
+  <title>EkAyu Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4faf9;
+      --surface: #ffffff;
+      --text: #14302e;
+      --secondary: #526765;
+      --accent: #047f7a;
+      --border: #cfe2df;
+      --notice: #e4f5f2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1716;
+        --surface: #142220;
+        --text: #edf8f6;
+        --secondary: #acc0bd;
+        --accent: #59d4ca;
+        --border: #304744;
+        --notice: #173330;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgb(0 0 0 / 8%);
+    }
+
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 7vw, 3rem); }
+    h2 { margin: 40px 0 12px; font-size: 1.35rem; }
+    p, ul { margin: 0 0 16px; }
+    ul { padding-left: 24px; }
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .eyebrow {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .updated { color: var(--secondary); }
+
+    .summary {
+      margin: 28px 0 8px;
+      padding: 18px 20px;
+      background: var(--notice);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 520px) {
+      body { font-size: 16px; }
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">EkAyu for iOS</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated"><strong>Effective date:</strong> September 7, 2026</p>
+    </header>
+
+    <p class="summary">
+      EkAyu keeps the health information you enter on your device. The developer does not
+      operate an EkAyu account service, collect your health information, sell personal data,
+      serve advertising, or track you across apps or websites.
+    </p>
+
+    <h2>1. Who this policy covers</h2>
+    <p>
+      This policy describes how the EkAyu iOS app (bundle identifier
+      <code>com.codecat15.ekayu</code>) handles information. EkAyu is developed and maintained
+      by <a href="https://github.com/codecat15">codecat15</a> (referred to as “the developer,”
+      “we,” or “us”).
+    </p>
+
+    <h2>2. Information you add to EkAyu</h2>
+    <p>You may choose to enter or attach information such as:</p>
+    <ul>
+      <li>profile names, relationships, dates of birth, sex, blood group, and profile photos;</li>
+      <li>medical conditions, medications, allergies, and other health-related details; and</li>
+      <li>medical report titles, types, dates, providers, facilities, notes, images, and PDF files.</li>
+    </ul>
+    <p>
+      This information is processed locally to provide the app’s profile, organization, search,
+      preview, and sharing features. It is not transmitted to the developer or an EkAyu server.
+    </p>
+
+    <h2>3. Data collection and tracking</h2>
+    <p>
+      EkAyu does not automatically collect personal data, health data, usage data, diagnostics,
+      analytics, advertising identifiers, or precise location. EkAyu does not use cookies or
+      tracking technologies, does not track you across other companies’ apps or websites, and
+      does not sell or rent personal information.
+    </p>
+    <p>
+      The app does not include advertising or analytics services. It uses FactoryKit as a local
+      software dependency for app configuration; that dependency does not receive app data.
+    </p>
+
+    <h2>4. On-device storage and security</h2>
+    <p>
+      Profiles, health details, report metadata, photos, and report attachments are stored in the
+      app’s private storage on your Apple device. EkAyu applies iOS file protection to its stored
+      health information and excludes its health-data store from device backups. Access is also
+      protected by your device passcode and, when you enable the optional app lock in EkAyu,
+      Face ID, Touch ID, Optic ID, or your device passcode, depending on your device.
+    </p>
+    <p>
+      No security method is guaranteed to prevent every possible loss or unauthorized access.
+      You are responsible for maintaining control of your device and passcode.
+    </p>
+
+    <h2>5. Device access and permissions</h2>
+    <p>EkAyu uses protected device features only when you choose an action that needs them:</p>
+    <ul>
+      <li><strong>Camera permission:</strong> to capture a profile photo or medical report attachment.</li>
+      <li>
+        <strong>Photos and files:</strong> Apple’s system pickers give EkAyu access only to the
+        images or documents you select; EkAyu does not request broad access to your library.
+      </li>
+      <li>
+        <strong>Device authentication:</strong> to authenticate you when the optional app lock is
+        enabled. EkAyu uses the authentication method available on your device, such as Face ID,
+        Touch ID, Optic ID, or the device passcode.
+      </li>
+    </ul>
+    <p>
+      You can manage system permissions in the iOS Settings app. Disabling a permission may make
+      its related feature unavailable, but does not send data to the developer.
+    </p>
+
+    <h2>6. Sharing and disclosure</h2>
+    <p>
+      EkAyu shares information only when you deliberately use an Apple sharing interface and
+      choose a destination. For example, you can select one or more report attachments and share
+      them through Messages, Mail, AirDrop, or another installed app. The selected recipient or
+      service then handles that information under its own terms and privacy policy. Review the
+      destination carefully before sharing sensitive health information.
+    </p>
+    <p>
+      We may disclose information if you voluntarily send it to us, or if disclosure is required
+      to comply with applicable law. Because the developer does not receive your in-app health
+      information, we cannot access or disclose it from an EkAyu server.
+    </p>
+
+    <h2>7. Optional support communications</h2>
+    <p>
+      If you choose “Email Feedback,” EkAyu opens your mail app with app version, build number,
+      device model, and operating-system version included in a draft. Nothing is sent unless you
+      choose to send the email. If sent, we receive the sender address, message, and included
+      diagnostic details and use them only to respond, troubleshoot, and improve EkAyu. Do not
+      include medical records or other sensitive health information in support messages.
+    </p>
+
+    <h2>8. Retention, deletion, and your choices</h2>
+    <p>
+      Information entered in EkAyu remains on your device until you delete it, delete the related
+      profile or report, use <strong>Settings → Delete All App Data</strong>, or remove the app.
+      If you delete EkAyu, all data stored by the app on that device is permanently deleted,
+      including every profile and all reports and attachments associated with those profiles.
+      You can edit profiles and reports in the app. Deleted data cannot be restored by the
+      developer because we do not keep a server or backup copy.
+    </p>
+    <p>
+      Support communications are retained only as long as reasonably necessary to address the
+      request, maintain support records, protect against abuse, or meet legal obligations. You may
+      ask us to delete a support communication using the contact method below. We may need enough
+      information to identify the communication, and legal exceptions may apply.
+    </p>
+
+    <h2>9. Children’s privacy</h2>
+    <p>
+      EkAyu is not directed to children and does not knowingly collect personal information from
+      children through an online service. A parent or guardian may use the app to keep a child’s
+      information locally on the parent’s or guardian’s device. Only enter another person’s
+      information when you are authorized to do so.
+    </p>
+
+    <h2>10. Health and medical notice</h2>
+    <p>
+      EkAyu is an organizational tool, not a healthcare provider, emergency service, diagnostic
+      tool, or substitute for professional medical advice. The app does not connect to HealthKit
+      and does not use health information for advertising, marketing, data mining, or sale.
+    </p>
+
+    <h2>11. International use</h2>
+    <p>
+      EkAyu’s in-app data processing takes place on your device. If you send support email or
+      share information with another service, that provider may process information in other
+      countries under its own privacy practices.
+    </p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>
+      We may update this policy if EkAyu’s features, data practices, or legal obligations change.
+      The effective date at the top will be revised when changes are published. Material changes
+      will be communicated through the app or its App Store listing when appropriate.
+    </p>
+
+    <h2>13. Contact</h2>
+    <p>
+      For privacy questions or requests, email the developer at
+      <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Do not include health information,
+      report attachments, credentials, or other sensitive personal data in your message.
+    </p>
+    <p><a href="support.html">Visit EkAyu Support</a></p>
+
+    <footer>
+      <p>© 2026 EkAyu developer. This page applies to EkAyu for iOS.</p>
+    </footer>
+  </main>
+</body>
+</html>

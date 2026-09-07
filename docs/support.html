@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and frequently asked questions for the EkAyu iOS app.">
+  <meta name="color-scheme" content="light dark">
+  <title>EkAyu Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4faf9;
+      --surface: #ffffff;
+      --text: #14302e;
+      --secondary: #526765;
+      --accent: #047f7a;
+      --border: #cfe2df;
+      --notice: #e4f5f2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1716;
+        --surface: #142220;
+        --text: #edf8f6;
+        --secondary: #acc0bd;
+        --accent: #59d4ca;
+        --border: #304744;
+        --notice: #173330;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgb(0 0 0 / 8%);
+    }
+
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 7vw, 3rem); }
+    h2 { margin: 40px 0 12px; font-size: 1.35rem; }
+    p, ul { margin: 0 0 16px; }
+    ul { padding-left: 24px; }
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .eyebrow {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .updated { color: var(--secondary); }
+
+    .summary {
+      margin: 28px 0 8px;
+      padding: 18px 20px;
+      background: var(--notice);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 16px 18px;
+      cursor: pointer;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    summary::marker { color: var(--accent); }
+
+    details[open] summary {
+      background: var(--notice);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .answer { padding: 16px 18px 2px; }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 520px) {
+      body { font-size: 16px; }
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">EkAyu for iOS</p>
+      <h1>Support</h1>
+      <p class="updated">Help with using EkAyu on iPhone and iPad</p>
+    </header>
+
+    <p class="summary">
+      For support, bug reports, or feature requests, email
+      <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a> or use
+      <strong>Settings → Feedback/Request Feature</strong> in EkAyu. Do not include medical records
+      or other sensitive health information in your message.
+    </p>
+
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>1. Do I need to log in to use EkAyu?</summary>
+        <div class="answer">
+          <p>
+            No. EkAyu does not use accounts or require a login. Create a profile and begin adding
+            your information. For additional protection, you can enable the optional app lock in
+            Settings. It uses the authentication available on your device, such as Face ID,
+            Touch ID, Optic ID, or your device passcode.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>2. Can I use EkAyu on an iPad?</summary>
+        <div class="answer">
+          <p>
+            Yes. EkAyu supports both iPhone and iPad. Data is stored separately on each device
+            because EkAyu does not currently provide cross-device synchronization.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>3. Can I share a medical report with someone?</summary>
+        <div class="answer">
+          <p>
+            Yes. The Share action lets you share the PDF or image attachments you select through
+            Apple’s sharing interface. It does not share the entire profile automatically. Medical
+            documents are sensitive, so share them only with a person or service you trust, such
+            as your healthcare professional. After a file leaves EkAyu, the recipient or selected
+            service controls its copy.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>4. How do I report a bug or request a feature?</summary>
+        <div class="answer">
+          <p>
+            In EkAyu, open <strong>Settings → Feedback/Request Feature</strong>. Your mail app will
+            open a draft addressed to the developer. Describe the problem or feature you would
+            like, but do not attach medical records or include sensitive health information.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>5. How do I access my iPhone records on my iPad?</summary>
+        <div class="answer">
+          <p>
+            EkAyu does not currently support cross-device sync or full profile transfer. You can
+            share individual report attachments using options such as AirDrop, but this does not
+            recreate the profile or report record on the other device. Cross-device support may
+            be considered in the future based on user demand, but there is no committed timeline.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>6. Where are my medical records stored?</summary>
+        <div class="answer">
+          <p>
+            Profiles, reports, photos, and attachments are stored only in EkAyu’s private storage
+            on the device where you created them. They are not synchronized to iCloud or uploaded
+            to an EkAyu server.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>7. What happens to my data if I delete EkAyu?</summary>
+        <div class="answer">
+          <p>
+            Deleting EkAyu permanently deletes all of its data from that device, including every
+            profile and all reports and attachments associated with those profiles. The developer
+            cannot recover the data because EkAyu does not keep a server or backup copy.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>8. Can I use EkAyu for family members?</summary>
+        <div class="answer">
+          <p>
+            Yes. You can create separate profiles to organize information for family members or
+            other people in your care. Only store another person’s health information when you
+            have their permission or are otherwise authorized to manage it.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>9. What files can I attach to a report?</summary>
+        <div class="answer">
+          <p>
+            EkAyu accepts PDF, JPEG, and PNG attachments. You can add up to 15 files to one report,
+            and each file can be up to 25 MB.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>10. Does EkAyu provide medical advice?</summary>
+        <div class="answer">
+          <p>
+            No. EkAyu is an organizational tool and does not provide medical advice, diagnosis,
+            treatment, or emergency services. Verify medical and medication information with a
+            qualified healthcare professional. In an emergency, contact your local emergency
+            services immediately.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <h2>Still need help?</h2>
+    <p>
+      Email <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Include the app version,
+      device type, iOS version, and a description of the problem when possible. Do not include
+      medical records, report attachments, credentials, or other sensitive personal data.
+    </p>
+    <p><a href="privacy-policy.html">Read the EkAyu Privacy Policy</a></p>
+
+    <footer>
+      <p>© 2026 EkAyu developer. This support page applies to EkAyu for iOS.</p>
+    </footer>
+  </main>
+</body>
+</html>
