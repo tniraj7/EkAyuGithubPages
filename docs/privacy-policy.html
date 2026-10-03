@@ -108,13 +108,15 @@
     <header>
       <p class="eyebrow">EkAyu for iOS</p>
       <h1>Privacy Policy</h1>
-      <p class="updated"><strong>Effective date:</strong> September 7, 2026</p>
+      <p class="updated"><strong>Effective date:</strong> September 30, 2026</p>
     </header>
 
     <p class="summary">
-      EkAyu keeps the health information you enter on your device. The developer does not
-      operate an EkAyu account service, collect your health information, sell personal data,
-      serve advertising, or track you across apps or websites.
+      EkAyu keeps the health information you enter on your device. If you turn on iCloud Sync,
+      it is also stored in your own private iCloud account, which Apple provides. It is never sent
+      to an EkAyu server, and the developer cannot see it. The developer does not operate an EkAyu
+      account service, collect your health information, sell personal data, serve advertising, or
+      track you across apps or websites.
     </p>
 
     <h2>1. Who this policy covers</h2>
@@ -140,7 +142,8 @@
     <h2>3. Data collection and tracking</h2>
     <p>
       <strong>In the app:</strong> EkAyu itself does not record or store your IP address.
-      Your health records stay on your device unless you choose to share them. The app does not
+      Your health records stay on your device unless you choose to share them or turn on iCloud
+      Sync. The app does not
       automatically send your health records, app usage, or diagnostic information to the
       developer. It does not collect advertising identifiers or precise location, track you
       across other companies’ apps or websites, or sell or rent personal information.
@@ -163,13 +166,40 @@
       software dependency for app configuration; that dependency does not receive app data.
     </p>
 
-    <h2>4. On-device storage and security</h2>
+    <h2>4. Storage, optional iCloud Sync, and security</h2>
     <p>
       Profiles, health details, report metadata, photos, and report attachments are stored in the
       app’s private storage on your Apple device. EkAyu applies iOS file protection to its stored
-      health information and excludes its health-data store from device backups. Access is also
-      protected by your device passcode and, when you enable the optional app lock in EkAyu,
-      Face ID, Touch ID, Optic ID, or your device passcode, depending on your device.
+      health information and excludes its health-data store from ordinary device backups. Access
+      is also protected by your device passcode and, when you enable the optional app lock in
+      EkAyu, Face ID, Touch ID, or your device passcode, depending on your device.
+    </p>
+    <p>
+      <strong>iCloud Sync is optional and off unless you turn it on.</strong> When it is on, your
+      EkAyu data is kept in your own private iCloud account so it can appear on your other devices
+      signed in to the same Apple Account. It is tied to your Apple Account; the developer cannot
+      see it, and it is never sent to an EkAyu server or shared with anyone else. Apple stores it as
+      part of your iCloud account under its own
+      <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.
+    </p>
+    <p>
+      EkAyu encrypts your health information on your device before it is stored in iCloud. This
+      covers profile details, medical conditions, medications, allergies, report details, photos,
+      and attachments. A few technical details that keep your devices in step, such as when a
+      record was created, are not encrypted.
+    </p>
+    <p>
+      When you first open EkAyu on a device, it checks whether your iCloud account already has
+      EkAyu profiles so it can offer to turn on iCloud Sync. Your records are not copied to the
+      device, and nothing is uploaded, unless you agree.
+    </p>
+    <p>
+      iCloud Sync is not a backup: edits and deletions on one device also apply to your other
+      devices. Turning it off stops syncing on that device and keeps your data there. You can
+      remove EkAyu’s data from iCloud at any time with
+      <strong>Settings → Delete Data from iCloud</strong>. This also turns off iCloud Sync on the
+      device you are using, and your data on that device stays. Before you do, turn off iCloud
+      Sync on your other devices, or they will upload their copies again.
     </p>
     <p>
       No security method is guaranteed to prevent every possible loss or unauthorized access.
@@ -187,7 +217,7 @@
       <li>
         <strong>Device authentication:</strong> to authenticate you when the optional app lock is
         enabled. EkAyu uses the authentication method available on your device, such as Face ID,
-        Touch ID, Optic ID, or the device passcode.
+        Touch ID, or the device passcode.
       </li>
     </ul>
     <p>
@@ -226,8 +256,9 @@
 
     <h2>7. Optional support communications</h2>
     <p>
-      If you choose “Email Feedback,” EkAyu opens your mail app with app version, build number,
-      device model, and operating-system version included in a draft. Nothing is sent unless you
+      If you choose <strong>Settings → Feedback/Request Feature</strong>, EkAyu opens your mail app
+      with the app version, build number, device type (iPhone or iPad), and operating-system
+      version included in a draft. Nothing is sent unless you
       choose to send the email. If sent, we receive the sender address, message, and included
       diagnostic details and use them only to respond, troubleshoot, and improve EkAyu. Do not
       include medical records or other sensitive health information in support messages.
@@ -235,12 +266,16 @@
 
     <h2>8. Retention, deletion, and your choices</h2>
     <p>
-      Information entered in EkAyu remains on your device until you delete it, delete the related
+      Information entered in EkAyu remains in the app until you delete it, delete the related
       profile or report, use <strong>Settings → Delete All App Data</strong>, or remove the app.
-      If you delete EkAyu, all data stored by the app on that device is permanently deleted,
-      including every profile and all reports and attachments associated with those profiles.
-      You can edit profiles and reports in the app. Deleted data cannot be restored by the
-      developer because we do not keep a server or backup copy.
+      With iCloud Sync on, deleting a profile or report in EkAyu also deletes it from iCloud and
+      your other devices. <strong>Delete All App Data</strong> removes data from that device only
+      and turns off iCloud Sync on it; to remove the iCloud copy, turn off iCloud Sync on your
+      other devices and then use <strong>Settings → Delete Data from iCloud</strong>. Removing the
+      app deletes its data from
+      that device only; anything still in your
+      iCloud can return if you reinstall and turn iCloud Sync back on. The developer cannot
+      restore deleted data because we do not keep a server or backup copy.
     </p>
     <p>
       Support communications are retained only as long as reasonably necessary to address the
@@ -266,8 +301,9 @@
 
     <h2>11. International use</h2>
     <p>
-      EkAyu processes your health records on your device. If you open our GitHub-hosted web
-      pages, send support email, or share information with another service, the relevant
+      EkAyu processes your health records on your device. If you turn on iCloud Sync, open our
+      GitHub-hosted web pages, send support email, or share information with another service,
+      the relevant
       provider may process the information it receives in other countries under its own
       privacy practices.
     </p>
@@ -282,7 +318,7 @@
     <h2>13. Contact</h2>
     <p>
       For privacy questions or requests, email the developer at
-      <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Do not include health information,
+      <a href="mailto:ekayuapp@gmail.com" aria-label="Email the EkAyu developer at ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Do not include health information,
       report attachments, credentials, or other sensitive personal data in your message.
     </p>
     <p><a href="support.html">Visit EkAyu Support</a></p>

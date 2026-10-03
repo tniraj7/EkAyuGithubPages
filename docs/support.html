@@ -142,7 +142,7 @@
 
     <p class="summary">
       For support, bug reports, or feature requests, email
-      <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a> or use
+      <a href="mailto:ekayuapp@gmail.com" aria-label="Email EkAyu support at ekayuapp@gmail.com">ekayuapp@gmail.com</a> or use
       <strong>Settings → Feedback/Request Feature</strong> in EkAyu. Do not include medical records
       or other sensitive health information in your message.
     </p>
@@ -157,7 +157,7 @@
             No. EkAyu does not use accounts or require a login. Create a profile and begin adding
             your information. For additional protection, you can enable the optional app lock in
             Settings. It uses the authentication available on your device, such as Face ID,
-            Touch ID, Optic ID, or your device passcode.
+            Touch ID, or your device passcode.
           </p>
         </div>
       </details>
@@ -166,8 +166,8 @@
         <summary>2. Can I use EkAyu on an iPad?</summary>
         <div class="answer">
           <p>
-            Yes. EkAyu supports both iPhone and iPad. Data is stored separately on each device
-            because EkAyu does not currently provide cross-device synchronization.
+            Yes. EkAyu supports both iPhone and iPad. To see the same data on both, turn on
+            iCloud Sync (see question 5).
           </p>
         </div>
       </details>
@@ -203,10 +203,10 @@
         <summary>5. How do I access my iPhone records on my iPad?</summary>
         <div class="answer">
           <p>
-            EkAyu does not currently support cross-device sync or full profile transfer. You can
-            share individual report attachments using options such as AirDrop, but this does not
-            recreate the profile or report record on the other device. Cross-device support may
-            be considered in the future based on user demand, but there is no committed timeline.
+            Turn on <strong>Settings → iCloud Sync</strong> in EkAyu on both devices, using the same
+            Apple Account. When you first open EkAyu on a new device and your iCloud already has
+            EkAyu profiles, EkAyu asks whether you want to turn on iCloud Sync. Changes can take a
+            few moments to appear, and need an internet connection and enough iCloud storage.
           </p>
         </div>
       </details>
@@ -215,9 +215,11 @@
         <summary>6. Where are my medical records stored?</summary>
         <div class="answer">
           <p>
-            Profiles, reports, photos, and attachments are stored only in EkAyu’s private storage
-            on the device where you created them. They are not synchronized to iCloud or uploaded
-            to an EkAyu server.
+            On your device. If you turn on iCloud Sync, they are also kept in your own private
+            iCloud account, and EkAyu encrypts your health information on your device before it is
+            stored there. Your data is never sent to an EkAyu server, and the developer cannot see
+            it. iCloud Sync is not a backup: edits and deletions on one device also apply to your
+            other devices.
           </p>
         </div>
       </details>
@@ -226,15 +228,32 @@
         <summary>7. What happens to my data if I delete EkAyu?</summary>
         <div class="answer">
           <p>
-            Deleting EkAyu permanently deletes all of its data from that device, including every
-            profile and all reports and attachments associated with those profiles. The developer
-            cannot recover the data because EkAyu does not keep a server or backup copy.
+            Deleting the app removes its data from that device only. If you used iCloud Sync, your
+            data stays in your iCloud and can return when you reinstall EkAyu and turn iCloud Sync
+            back on. To remove it from iCloud, see question 8. The developer cannot recover deleted
+            data because EkAyu does not keep a server or backup.
           </p>
         </div>
       </details>
 
       <details>
-        <summary>8. Can I use EkAyu for family members?</summary>
+        <summary>8. How do I turn off iCloud Sync or remove my data from iCloud?</summary>
+        <div class="answer">
+          <p>
+            Turn off <strong>Settings → iCloud Sync</strong>. Syncing stops on this device, and
+            your data stays here.
+          </p>
+          <p>
+            To also remove EkAyu’s data from iCloud, first turn off iCloud Sync on your other
+            devices, or they will upload their copies again. Then use
+            <strong>Settings → Delete Data from iCloud</strong>. This also turns off iCloud Sync on
+            the device you are using, and your data on that device stays.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>9. Can I use EkAyu for family members?</summary>
         <div class="answer">
           <p>
             Yes. You can create separate profiles to organize information for family members or
@@ -245,7 +264,7 @@
       </details>
 
       <details>
-        <summary>9. What files can I attach to a report?</summary>
+        <summary>10. What files can I attach to a report?</summary>
         <div class="answer">
           <p>
             EkAyu accepts PDF, JPEG, and PNG attachments. You can add up to 15 files to one report,
@@ -255,7 +274,7 @@
       </details>
 
       <details>
-        <summary>10. Does EkAyu provide medical advice?</summary>
+        <summary>11. Does EkAyu provide medical advice?</summary>
         <div class="answer">
           <p>
             No. EkAyu is an organizational tool and does not provide medical advice, diagnosis,
@@ -269,7 +288,7 @@
 
     <h2>Still need help?</h2>
     <p>
-      Email <a href="mailto:ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Include the app version,
+      Email <a href="mailto:ekayuapp@gmail.com" aria-label="Email EkAyu support at ekayuapp@gmail.com">ekayuapp@gmail.com</a>. Include the app version,
       device type, iOS version, and a description of the problem when possible. Do not include
       medical records, report attachments, credentials, or other sensitive personal data.
     </p>
